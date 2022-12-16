@@ -12,4 +12,5 @@ class Song(models.Model):
         "albums.Album",
         on_delete=models.CASCADE,
         related_name="songs",
+        blank=True
     )

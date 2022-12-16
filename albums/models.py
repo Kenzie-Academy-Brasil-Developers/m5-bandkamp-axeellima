@@ -12,4 +12,5 @@ class Album(models.Model):
         "users.User",
         on_delete=models.CASCADE,
         related_name="albums",
+        blank = True
     )
