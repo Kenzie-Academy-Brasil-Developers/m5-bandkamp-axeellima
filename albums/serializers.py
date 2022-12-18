@@ -10,4 +10,5 @@ class AlbumSerializer(serializers.ModelSerializer):
         model = Album
         fields = "__all__"
         extra_kwargs = {'user': {'write_only': True}}
+        read_only_fields = ["id"]
 
