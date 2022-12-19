@@ -8,6 +8,5 @@ class SongSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Song
-        fields = "__all__"
-        extra_kwargs = {"album": {"write_only": True}}
+        fields = ["id","album_id","title", "duration"]
         read_only_fields = ["id"]
